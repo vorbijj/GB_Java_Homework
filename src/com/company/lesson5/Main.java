@@ -8,7 +8,7 @@ public class Main {
         employeesArray[1] = new Employee("Romanov", "Eduard", "Bogdanovich", "Engineer", "reb@mail.ru", "8(495)888-45-22", 73000f, 1979);
         employeesArray[2] = new Employee("Bezrukov", "Dmitrii", "Vladimirovich", "Engineer", "bdv@mail.ru", "8(495)888-56-31", 68000f, 1980);
         employeesArray[3] = new Employee("Bikova", "Anna", "Ivanovna", "Economist", "bai@mail.ru", "8(495)888-43-12", 63000f, 1988);
-        employeesArray[4] = new Employee("Rikov", "Andrei", "Vital'evich", "intern", "rav@mail.ru", "8(495)888-45-25", 32000f, 1995);
+        employeesArray[4] = new Employee("Rikov", "Andrei", "Vital'evich", "Intern", "rav@mail.ru", "8(495)888-45-25", 32000f, 1995);
 
         System.out.println("Информация о сотрудниках старше 40 лет:");
         for (Employee employee : employeesArray ) {
