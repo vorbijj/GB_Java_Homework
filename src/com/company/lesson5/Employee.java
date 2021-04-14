@@ -1,8 +1,9 @@
 package com.company.lesson5;
 
-public class Employee {
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
-    private static final int CURRENT_YEAR = 2021;
+public class Employee {
 
     private String surname;
     private String name;
@@ -26,7 +27,9 @@ public class Employee {
     }
 
     public int getAge() {
-        return CURRENT_YEAR - birthYear;
+        LocalDate date = LocalDate.now();
+        String currentYear = date.format(DateTimeFormatter.ofPattern("yyyy"));
+        return Integer.parseInt(currentYear) - birthYear;
     }
 
 /*    Вывод информации об объекте в консоль по заданию
