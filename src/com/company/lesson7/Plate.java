@@ -9,7 +9,7 @@ public class Plate {
         decreased = false;
     }
 
-    public void setFood(int food) {
+    public void addFood(int food) {
         this.food += food;
     }
 
