@@ -15,9 +15,9 @@ public class Cat {
         return satiety;
     }
 
-    public void eat(Plate p) {
-        p.decreaseFood(appetite);
-        satiety = p.isDecreased();
+    public void eat(Plate plate) {
+        plate.decreaseFood(appetite);
+        satiety = plate.isDecreased();
         System.out.println("Кот " + name + " поел, он сытый: " + satiety);
     }
 

@@ -26,7 +26,7 @@ public class MainClass {
             if (!cat.isSatiety()) {
                 System.out.println("!!!Добавка порции еды!!!");
 
-                plate.setFood(addition);
+                plate.addFood(addition);
                 plate.info();
                 cat.eat(plate);
                 plate.info();
