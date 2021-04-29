@@ -1,9 +1,12 @@
 package com.company.lesson11;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class ArrBox<T> {
     private T[] arr;
+
 
     public ArrBox(T... arr) {
         this.arr = arr;
@@ -32,7 +35,13 @@ public class ArrBox<T> {
         System.out.println();
     }
 
+    public static<T> List transformationArrToArrayList (T[] arr) {
 
-
+        List<T> arrList = new ArrayList<>();
+        for (int i = 0; i < arr.length; i++) {
+            arrList.add(arr[i]);
+        }
+        return arrList;
+    }
 
 }
